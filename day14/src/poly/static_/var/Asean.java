@@ -18,7 +18,7 @@ public class Asean {
 	// 스태틱 블록 내부 코드는 프로그램 시작 즉시 자동으로 한 번 호출됩니다.
 	static {
 		presentationScore = 29;
-	}
+	} // 메인메서드보다 앞서서 값을 초기화해야 하는 경우이다. 정적 초기화자
 	
 	public void showStudentScore() {
 		System.out.println("학생명 : " + this.name);
