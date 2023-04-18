@@ -13,9 +13,14 @@ public class Num2587 {
 			a[i] = scan.nextInt();
 		} // 배열에 초기화
 		
-//		avg = a
+		int avg = (a[0]+a[1]+a[2]+a[3]+a[4])/5;
+		int mid = 0;
 		
-//		System.out.printf();
+//		for 
+		
+		
+		System.out.println(avg);
+		System.out.println(mid);
 		
 		
 

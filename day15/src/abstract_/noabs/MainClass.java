@@ -3,7 +3,7 @@ package abstract_.noabs;
 public class MainClass {
 
 	public static void main(String[] args) {
-		// 2가지 문재점 체크
+		// 2가지 문제점 체크
 		
 		// 1. 상속 목적으로 만든 팝업스토어 생성 가능
 		PopupStore ps = new PopupStore();

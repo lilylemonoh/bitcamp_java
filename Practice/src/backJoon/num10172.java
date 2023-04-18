@@ -1,6 +1,6 @@
 package backJoon;
 
-public class num10172 {
+public class Num10172 {
 
 	public static void main(String[] args) {
 		System.out.println("|\\_/|");

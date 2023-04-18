@@ -3,7 +3,7 @@ package static_.singleton;
 public class MainClass {
 	
 	public static void main(String[] args) {
-	// Singleton 객체는 생성자가 private이므로 인스턴스 생생 불가
+	// Singleton 객체는 생성자가 private이므로 인스턴스 생성 불가
 //		Singleton s1 = new Singleton();
 //		s1.getInstance();
 
