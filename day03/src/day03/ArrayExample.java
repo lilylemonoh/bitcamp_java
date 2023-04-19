@@ -43,6 +43,7 @@ public class ArrayExample {
 		//배열의 선언과 초기화를 동시에 하는 방법 : {}
 		int[] iArr2 = {1, 3, 5, 7, 9}; //중괄호에 넣을 자료를 나열해 대입
 		
+		
 		System.out.println(Arrays.toString(iArr2));
 		
 		
