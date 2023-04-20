@@ -10,7 +10,7 @@ public class ArraysSearch {
 		
 		// Arrays.sort() : 배열의 데이터를 오름차순으로 정렬하는 메서드
 		Arrays.sort(scores2);
-		System.out.println("scores : " + Arrays.toString(scores));
+		System.out.println("scores : " + Arrays.toString(scores)); 
 		System.out.println("scores2 : " + Arrays.toString(scores2));
 
 		// Arrays.binarySearch() : 배열 내부 인덱스번호를 탐색하는 메서드
