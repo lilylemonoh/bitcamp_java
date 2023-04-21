@@ -43,7 +43,11 @@ public class HashMapLoginQuiz {
 			if(map.containsKey(userId)) {
 				System.out.println("비밀번호를 입력하세요.");
 				String userPw = scan.next();
-				if(map.containsValue(userPw)) {
+				
+				String check = map.get(id); // 강사님풀이
+				if(check.equals(pw)) {	// 강사님풀이
+					
+				// if(map.containsValue(userPw)) {
 					System.out.println("로그인 성공");
 					break;
 				}else {

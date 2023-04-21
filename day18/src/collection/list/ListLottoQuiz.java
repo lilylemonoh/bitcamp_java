@@ -1,6 +1,7 @@
 package collection.list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -21,22 +22,53 @@ public class ListLottoQuiz {
 	    [1, 2, 3]과 [1, 3, 2]는 false로 비교됩니다.
 		 */
 
+		//1. 
 		List<Integer> list = new ArrayList<>();
-		Random r = new Random();
-		
-		
-		for(int i = 0; i <= 6; i++) {
-			int a = r.nextInt(45) + 1;
-			}//중복 어케 없앰..
-		
-		
-		
 
-
+		while(list.size() < 6) {
+			int num = (int)(Math.random()*45)+1;
+			if(list.contains(num)) {
+				continue;
+			} else {
+			list.add(num);
+			}
+		}
+		Collections.sort(list);
+		System.out.println("로또 당첨 번호 : " + list);
 		
-		System.out.println(list);
 		
 		
+		List<Integer> lottoTry = new ArrayList<>();
+		
+		int count = 0;
+		boolean flag = true;
+		
+		while(flag) {
+		
+		while(lottoTry.size() < 6) {
+			int num = (int)(Math.random()*45)+1;
+			if(lottoTry.contains(num)) {
+				continue;
+			} else {
+				lottoTry.add(num);
+			}
+		}
+		Collections.sort(lottoTry);
+		System.out.println(lottoTry);
+		count++;
+		System.out.println(count);		
+//		list와 lottoTry가 일치하는지 확인
+		if(list.containsAll(lottoTry)) {
+				System.out.println("로또에 당첨되었습니다.");
+				flag = false;
+			}else {
+				lottoTry.clear();
+		}		
+		}
+		
+		System.out.println("로또 구입 횟수 : " + count + "번");
+		//1000만 번을 사도 당첨이 안돼서.. 뭔가 잘못짠 것 같다
+	
 	}
 
 }
