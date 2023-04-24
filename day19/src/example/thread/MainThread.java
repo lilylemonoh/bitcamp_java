@@ -14,7 +14,7 @@ public class MainThread {
 		Thread sTrd = new Thread(trd);
 		
 		System.out.println("보조쓰레드 준비 완료!");
-		// 3. 보조쓰레드는 .run()으로 호출할 수 있습니다.
+		// 3. 보조쓰레드는 .start()으로 호출할 수 있습니다.
 		sTrd.start();
 		System.out.println("먼저 끝날지 알 수 없는 메인쓰레드");
 

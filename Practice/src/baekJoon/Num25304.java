@@ -10,7 +10,7 @@ public class Num25304 {
 		int kind = scan.nextInt(); // 반복문 돌릴 횟수
 		
 		int sum = 0;
-		for(int i = 0; i < kind*2; i++) {
+		for(int i = 0; i < kind; i++) {
 			int a = scan.nextInt();
 			int b = scan.nextInt();
 			sum += a*b;
@@ -21,6 +21,7 @@ public class Num25304 {
 			System.out.println("No");
 		}
 		
+		scan.close();
 		
 
 	}

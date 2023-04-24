@@ -11,7 +11,7 @@ public class MultiThread implements Runnable{
 		
 		try {		
 		// 여태까지 코드는 순차적으로 쉬는시간 없이 실행되었음
-		// Thread.stop(밀리초);는 해당 쓰레드 실행을 입력한 초만큼 중단합니다.
+		// Thread.sleep(밀리초);는 해당 쓰레드 실행을 입력한 초만큼 중단합니다.
 		// 쓰레드 중지는 try~catch블럭에 반드시 넣어야 합니다.
 			for(int i = 0; i < 500; i++) {
 				System.out.println("보조쓰레드 : 실행" + i);
