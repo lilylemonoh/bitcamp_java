@@ -17,6 +17,7 @@ public class Num11022 {
 		}
 		scan.close();
 
+
 	}
 
 }
