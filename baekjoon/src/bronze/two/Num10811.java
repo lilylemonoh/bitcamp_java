@@ -17,15 +17,19 @@ public class Num10811 {
 		// 배열 생성 및 초기화
 		
 		for(int i = 0; i < tryCount; i++) {
-			int a = scan.nextInt();
-			int b = scan.nextInt();
+			int from = scan.nextInt();
+			int to = scan.nextInt();
 			int tmp = 0;
 			
-			tmp = result[a-1];
-			result[a-1] = result[b-1];
-			result[b-1] = tmp;
 			
-			// 모르겠다..
+			while(from < to) {
+			tmp = result[from-1];
+			result[from-1] = result[to-1];
+			result[to-1] = tmp;
+			from++;
+			to--;
+			}
+			
 		}
 		
 		for(int i = 0; i < result.length; i++) {
