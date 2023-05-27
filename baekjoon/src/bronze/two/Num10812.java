@@ -26,8 +26,8 @@ public class Num10812 {
 			int midNum = scan.nextInt() - 1; 
 			
 			int[] arrFirst = Arrays.copyOfRange(buckArr, 0, beginNum);
-			int[] arrSecond = Arrays.copyOfRange(buckArr, midNum, endNum+1);
-			int[] arrThird = Arrays.copyOfRange(buckArr, beginNum, midNum);
+			int[] arrSecond = Arrays.copyOfRange(buckArr, midNum, endNum+1); // 바구니회전을 할 때 두 번째에 와야 할 부분
+			int[] arrThird = Arrays.copyOfRange(buckArr, beginNum, midNum); // 바구니회전을 할 때 세 번째에 와야 할 부분
 			int[] arrFourth = Arrays.copyOfRange(buckArr, endNum+1, numOfBuck);
 			
 			//System.arraycopy(복사할원본,시작인덱스(0),저장할 배열, 저장할 배열 시작인덱스, 요소개수)
