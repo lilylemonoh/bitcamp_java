@@ -3,7 +3,7 @@ package doIt.chapter_8.inheritance;
 public class Customer {
 	private int customerID; // 고객 아이디
 	private String customerName; // 고객 이름
-	private String customerGrade; // 고갹 등급
+	private String customerGrade; // 고객 등급
 	int bonusPoint; // 보너스 포인트
 	double bonusRatio; // 적립 비율 
 	
